@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+  }
+  
+  .navber{
+    max-width: 1440px;
+    margin: 0px auto;
+  }
+
+  /* navbar style */
+  
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+  }
+  .logo-brand{
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+  }
+  .brand-name{
+    font-size:2rem ;
+    font-weight: bold;
+  }
+  .nav-links{
+    display: flex;
+    align-items: center;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 32px;
+  }
+  .nav-link1{
+    text-decoration: none;
+    color: rgba(254, 163, 1, 1);
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .nav-link2{
+    text-decoration: none;
+    color: skyblue;
+    font-size: 1.25rem;
+    font-weight: 600px;
+  }
+  .nav-link3{
+    text-decoration: none;
+    color:rgba(5, 212, 223, 1);
+    font-size: 1.25rem;
+    font-weight: 600px ;
+  }
+  .nav-link4{
+    text-decoration: none;
+    color: rgba(93, 88, 239, 1);
+    font-size: 1.25rem;
+    font-weight: 600px;
+  }
+  .button1{
+    padding: 10px 60px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: rgba(254, 163, 1, 1);
+    border: none;
+  }
+  .button1:hover{
+    background-color: black;
+  }
+
+  /* banner style */
+  
+.banner{
+  max-width: 1360px;
+  margin: 0px auto;
+  display: flex;
+  gap: 70px;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+.banner-content{
+  max-width: 1440px;
+  margin: 120px 70px 120px 0px;
+}
+.banner-title{
+  font-size:3.5rem ;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+.title-color1{
+  color: rgba(254, 163, 1, 1);
+}
+.title-color2{
+  color: rgba(1, 172, 253, 1);
+}
+.banner-description{
+  font-size:1.25rem ;
+  font-weight: 400px;
+  color: rgba(17, 17, 17, 1);
+}
+.banner-button1{
+  background-color:black;
+  font-size: 20px;
+  font-family:Quicksand;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 45px;
+  color: rgb(245, 245, 245);
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+.banner-button1:hover{
+  background-color: orange;
+}
+.banner-img{
+  width: 100%;
+  margin: 0px auto;
+}
+
+/* curriculam card style */
+.curriculam{
+  background-image: url("../assets/bg.png");
+  max-width: 1360px;
+  margin: 0px auto;
+}
+.curriculam-title{
+  font-size:3.05rem ;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.card{
+  display: flex;
+  gap: 30px;
+  /* max-width: 1440px;
+  margin: 0p auto; */
+}
+.curriculam-card1{
+  padding: 80px 40px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 8px rgb(194, 191, 191);
+  justify-content: center;
+  text-align: center;
+}
+.curriculam-card2{
+  padding: 80px 40px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 8px rgb(194, 191, 191);
+  justify-content: center;
+  text-align: center;
+}.curriculam-card3{
+  padding: 80px 40px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 8px rgb(194, 191, 191);
+  justify-content: center;
+  text-align: center;
+}
+.card1-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card2-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}.card3-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card1-description{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 1);
+}
+.card2-description{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 1);
+}
+.card3-description{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 1);
+}
+.card1-button{
+  color: rgb(89, 184, 235);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+.card2-button{
+  color: rgba(240, 170, 0, 1);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+.card3-button{
+  color:rgba(135, 0, 255, 1);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+
+@media screen and (max-width:676px) {
+  .banner{
+    grid-template-columns: repeat(1,1fr);
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .banner-img{
+    margin: 10px auto;
+  }
+  .brand-name{
+    display: none;
+  }
+}
