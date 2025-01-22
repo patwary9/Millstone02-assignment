@@ -257,6 +257,8 @@
   font-weight: bold;
   justify-content: center;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
   
 }
 .stories-container{
@@ -317,7 +319,7 @@
   color: rgba(102, 102, 102, 1);
 }
 .stories-mini-card{
-  display: grid;
+  display: grid; 
   grid-template-columns: repeat(2,1fr);
   gap: 18px;
   margin-top: 190px;
@@ -329,6 +331,7 @@
   border-radius: 16px;
   background-color: white;
   border: none;
+  margin: 0px auto;
 }
 .stories-card2-img{
   width: 100%;
@@ -409,6 +412,9 @@
   margin-bottom: 40px;
   margin-top: 20px;
 }
+.view-button:hover{
+  background-color: rgb(28, 28, 248);
+}
 
 
 @media screen and (max-width:576px) {
@@ -450,42 +456,56 @@
   .arow-container{
     display: none;
   }
+  .card{
+    grid-template-columns: repeat(1,1fr);
+  }
   .curriculam{
     margin: 5px 10px;
   }
-  .card{
-    grid-template-columns: repeat(1,1fr);
+  .stories-container{
+   margin: 2px 10px;
   }
   .curriculam-title{
     font-size: 1.7rem;
     font-weight: bold;
-    margin-top: 45px;
+    margin-top: 60px;
   }
   .stories-card1{
     display: none;
   }
   .stories-mini-card{
-    grid-template-columns: repeat(2,1fr);
+     width: 360px ;
+    height:561px ;
+    margin: 0px auto;
     justify-content: center;
     align-items: center;
-    margin: 20px 16px;
+    gap: 5px;
+  }
+  .stories{
+    width: 385px;
+  }
+  .stories-card2{
+    width:170px ;
+    height:190px;
+  }
+  .stories-card2-img{
+    width: 100%;
+    /* margin: 0px auto; */
   }
   .stories-mini-card-title{
     font-size: 10px;
     font-weight: bold;
-    margin: 0px 38px 33px 20px;
-    /* margin-top: 10px; */
+    margin-top: 10px;
   }
   .mini-res{
     font-size: 9px;
-    font-weight: 600;
-    /* padding: 4px 30px; */
+    font-weight: 600px;
     width: 80px;
     height: 12px;
     text-align: center;
   }
   .mini-data{
     position: relative;
-    top: -18px;
+    top: -12px;
   }
 }
