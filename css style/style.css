@@ -8,6 +8,9 @@
     font-style: normal;
   }
   
+  *{
+    margin: 2px 0px;
+  }
   .navber{
     max-width: 1440px;
     margin: 0px auto;
@@ -93,7 +96,7 @@
 }
 .banner-content{
   max-width: 1440px;
-  margin: 120px 70px 120px 0px;
+  margin: 160px 70px 120px 0px;
   justify-content: center;
   align-items: center;
 }
@@ -242,16 +245,7 @@
   align-items: center;
   
 }
-/* .arow1{
-  width: 60px ;
-  height: 60px;
-  margin-right: 20px;
-}
-.arow2{
-  width: 60px ;
-  height: 60px;
-  margin-left: 20p;
-} */
+
 /* stories style */
 .stories{
   background-image: url(../assets/bg.png);
@@ -364,21 +358,7 @@
   top: -18px;
   
 }
-/* .mini-data2{
-  position: relative;
-  left:10px;
-  top: -18px;
-}
-.mini-data3{
-  position: relative;
-  left:10px;
-  top: -18px;
-}
-.mini-data4{
-  position: relative;
-  left:10px;
-  top: -18px;
-} */
+
 .stories-mini-date2{
   background-color: rgb(0, 0, 0); 
   color: white;
@@ -389,7 +369,8 @@
   font-weight: 500px;
   
   margin: -190px 78px 10px 20px;
-}.stories-mini-date3{
+}
+  .stories-mini-date3{
   background-color: rgb(11, 9, 102); 
   color: white;
   display: inline-block;
@@ -430,7 +411,7 @@
 }
 
 
-@media screen and (max-width:676px) {
+@media screen and (max-width:576px) {
   .nav-links{
     display: none;
   }
@@ -452,8 +433,10 @@
     grid-template-columns: repeat(1,1fr);
     flex-direction: column-reverse;
     gap: 5px;
+    margin: 5px 10px;
   }
   .banner-img{
+    width: 100%;
     margin: 10px auto;
   }
   .brand-name{
@@ -466,6 +449,9 @@
   }
   .arow-container{
     display: none;
+  }
+  .curriculam{
+    margin: 5px 10px;
   }
   .card{
     grid-template-columns: repeat(1,1fr);
@@ -495,7 +481,7 @@
     font-weight: 600;
     /* padding: 4px 30px; */
     width: 80px;
-    height: 22px;
+    height: 12px;
     text-align: center;
   }
   .mini-data{
