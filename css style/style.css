@@ -9,7 +9,7 @@
   }
   
   *{
-    margin: 2px 0px;
+    margin: 2px auto;
   }
   .navber{
     max-width: 1440px;
@@ -19,7 +19,7 @@
   /* navbar style */
   .menu-bar{
     display: none;
-    height: 20px;
+    height: 30px;
     width: 30px;
   }
   .nav-hr{
@@ -147,8 +147,10 @@
 .curriculam-title{
   font-size:3.05rem ;
   font-weight: bold;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
 .card{
   display: flex;
@@ -238,48 +240,57 @@
   background-color: white;
 }
 .arow-container{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top:80px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
-  
+  width: 130px;
+  height: 60px;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.arow{
+  width: 64px;
+  height: 60px;
+  gap: 10px;
+}
+.arow:hover{
+  transform: scale(1.1);
 }
 
 /* stories style */
 .stories{
-  background-image: url(../assets/bg.png);
-  background: linear-gradient(to top, #ffdb9e, #ffffff); 
+  /* background-image: url(../assets/bg.png); */
+  background:  url(../assets/bg.png), linear-gradient(to top, #ffdb9e, #ffffff);
+   
   margin: 0px auto;
 }
 .stories-title{
-  font-size: 2.8rem;
+  font-size: 3.05rem;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .stories-container{
   display: flex;
-  gap: 18px;
-  max-width:1360px ;
-  margin: 0px auto;
+  flex-direction: column;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  
+  gap: 18px;
+  margin: 0px auto;
+  max-width: 1360px;
 }
 .stories-card1{
-  /* padding: 60px 40px; */
   border-radius: 16px;
   background-color: white;
   width:660px ;
   height: 690px; 
   border: none;
-  margin-top: 190px;
-  margin-bottom: 180px;
-  /* margin-left: 18px; */
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .stories-card1-img{
   width: 100%;
@@ -295,49 +306,50 @@
   background-color: rgba(60, 216, 232, 1); 
   color: white;
   display: inline-block;
-  /* padding: 9px 19px; */
   padding:18px 20px ;
   border-radius: 47px;
   font-size: 15px;
   font-weight: 500px;
- 
 }
 .big-date{
   position: relative;
   left:-10px;
-  top: -53px;
-  bottom: 20px;
+  top: -38px;
 }
 .stories-card1-title{
   font-size:1.25rem ;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 .stories-card1-description{
   font-size: 1rem;
   font-weight: 500px;
   color: rgba(102, 102, 102, 1);
+  margin-bottom: 25px;
 }
 .stories-mini-card{
   display: grid; 
   grid-template-columns: repeat(2,1fr);
-  gap: 18px;
-  margin-top: 190px;
-  margin-bottom: 180px;
-  margin-right: 18x;
+  gap: 12px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  
 }
-
 .stories-card2{
   border-radius: 16px;
   background-color: white;
   border: none;
   margin: 0px auto;
+  width: 320px;
+  height: 340px;
+
 }
 .stories-card2-img{
   width: 100%;
-  height: auto;
-  margin: 0px auto;
+  margin: 0px auto; 
   border-radius: 16px 16px 0px 0px;
+  border: none;
 }
 .stories-mini-card-title{
   font-size: 1rem;
@@ -345,55 +357,31 @@
   margin: 0px 38px 33px 20px;
   margin-top: 10px;
 }
-.stories-mini-date1{
-  background-color: rgb(3, 65, 17); 
+.stories-mini-date2{
   color: white;
   display: inline-block;
   padding: 10px 19px;
   border-radius: 47px;
   font-size: 15px;
   font-weight: 500px;
-  margin: -190px 78px 10px 20px; 
-}
+  /* margin: -190px 78px 10px 20px;  */
+} 
 .mini-data{
   position: relative;
   left:10px;
-  top: -18px;
-  
+  top: -28px;
 }
-
-.stories-mini-date2{
+.mini-card-color1 {
+  background-color: rgb(3, 65, 17); 
+}
+.mini-card-color2 {
   background-color: rgb(0, 0, 0); 
-  color: white;
-  display: inline-block;
-  padding:9px 19px;
-  border-radius: 47px;
-  font-size: 15px;
-  font-weight: 500px;
-  
-  margin: -190px 78px 10px 20px;
 }
-  .stories-mini-date3{
+.mini-card-color3 {
   background-color: rgb(11, 9, 102); 
-  color: white;
-  display: inline-block;
-  padding:9px 19px;
-  border-radius: 47px;
-  font-size: 15px;
-  font-weight: 500px;
-  position: relative;
-  margin: -190px 78px 10px 20px;
 }
-.stories-mini-date4{
+.mini-card-color4 {
   background-color: rgb(110, 1, 1); 
-  color: white;
-  display: inline-block;
-  padding:9px 19px;
-  border-radius: 47px;
-  font-size: 15px;
-  font-weight: 500px;
-  position: relative;
-  margin: -190px 78px 10px 20px;
 }
 
 .stories-button{
@@ -416,7 +404,6 @@
   background-color: rgb(28, 28, 248);
 }
 
-
 @media screen and (max-width:576px) {
   .nav-links{
     display: none;
@@ -426,10 +413,15 @@
   }
   .menu-bar{
     display: block;
-    
+    width: 30px;
+    height: 30px;
+
   }
   .navbar{
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 282px;
   }
   .nav-hr{
     display: block;
@@ -453,47 +445,55 @@
   text-align: center;
   margin: 0 auto;
   }
-  .arow-container{
-    display: none;
-  }
   .card{
-    grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1,1fr);
   }
   .curriculam{
     margin: 5px 10px;
   }
-  .stories-container{
-   margin: 2px 10px;
-  }
+  
   .curriculam-title{
     font-size: 1.7rem;
     font-weight: bold;
     margin-top: 60px;
+    
+  }
+  .arow-container{
+    display: none;
   }
   .stories-card1{
     display: none;
   }
-  .stories-mini-card{
-     width: 360px ;
-    height:561px ;
-    margin: 0px auto;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  .stories-container{
+  
   }
-  .stories{
-    width: 385px;
+  .stories-mini-card{
+
   }
   .stories-card2{
-    width:170px ;
-    height:190px;
+
+  }
+  .stories-mini-date2{
+    color: white;
+    width: 130px;
+    height: 22px;
+    border-radius: 28px;
+    font-size: 9px;
+    font-weight: 400px;
+    /* margin: -190px 78px 10px 20px;  */
+  } 
+  .mini-data{
+    position: relative;
+    top: -24px;
+    left: 16px;
   }
   .stories-card2-img{
     width: 100%;
-    /* margin: 0px auto; */
+    margin: 0px auto;
+    border: none;
   }
   .stories-mini-card-title{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     margin-top: 10px;
   }
@@ -504,8 +504,8 @@
     height: 12px;
     text-align: center;
   }
-  .mini-data{
-    position: relative;
-    top: -12px;
+  /* footer */
+  .footer{
+    display: none;
   }
 }

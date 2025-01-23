@@ -1,0 +1,180 @@
+.stories-title{
+  font-size: 2.8rem;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+.stories-container{
+  display: flex;
+  gap: 18px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+.stories-card1{
+
+  border-radius: 16px;
+  background-color: white;
+  width:660px ;
+  height: 690px; 
+  border: none;
+  margin-top: 190px;
+  margin-bottom: 180px;
+  
+}
+.stories-card1-img{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 16px 16px 0px 0px;
+}
+.stories-card1-about{
+  margin-left: 38px;
+  margin-right: 38px;
+}
+.stories-card1-date{
+  background-color: rgba(60, 216, 232, 1); 
+  color: white;
+  display: inline-block;
+  padding:18px 20px ;
+  border-radius: 47px;
+  font-size: 15px;
+  font-weight: 500px;
+ 
+}
+.big-date{
+  position: relative;
+  left:-10px;
+  top: -53px;
+  bottom: 20px;
+}
+.stories-card1-title{
+  font-size:1.25rem ;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.stories-card1-description{
+  font-size: 1rem;
+  font-weight: 500px;
+  color: rgba(102, 102, 102, 1);
+}
+.stories-mini-card{
+  display: grid; 
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+  margin-top: 190px;
+  margin-bottom: 180px;
+  margin-right: 18x;
+}
+
+/* .stories-card2{
+  border-radius: 16px;
+  background-color: white;
+  border: none;
+  margin: 0px auto;
+} */
+/* .stories-card2-img{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 16px 16px 0px 0px;
+} */
+/* .stories-mini-card-title{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px 38px 33px 20px;
+  margin-top: 10px;
+} */
+/* .stories-mini-date1{
+  background-color: rgb(3, 65, 17); 
+  color: white;
+  display: inline-block;
+  padding: 10px 19px;
+  border-radius: 47px;
+  font-size: 15px;
+  font-weight: 500px;
+  margin: -190px 78px 10px 20px; 
+} */
+/* .mini-data{
+  position: relative;
+  left:10px;
+  top: -18px;
+} */
+
+/* .stories-mini-date2{
+  background-color: rgb(0, 0, 0); 
+  color: white;
+  display: inline-block;
+  padding:9px 19px;
+  border-radius: 47px;
+  font-size: 15px;
+  font-weight: 500px;
+  
+  margin: -190px 78px 10px 20px;
+} */
+  /* .stories-mini-date3{
+  background-color: rgb(11, 9, 102); 
+  color: white;
+  display: inline-block;
+  padding:9px 19px;
+  border-radius: 47px;
+  font-size: 15px;
+  font-weight: 500px;
+  position: relative;
+  margin: -190px 78px 10px 20px;
+} */
+/* .stories-mini-date4{
+  background-color: rgb(110, 1, 1); 
+  color: white;
+  display: inline-block;
+  padding:9px 19px;
+  border-radius: 47px;
+  font-size: 15px;
+  font-weight: 500px;
+  position: relative;
+  margin: -190px 78px 10px 20px;
+}  */
+
+
+/* /* medea screen */
+/* .stories-card1{
+    display: none;
+  }
+  .stories-mini-card{
+    width: 360px ;
+    height:561px ;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .stories{
+    /* width: 395px; */
+    /* margin: 0px auto;
+  }
+  .stories-card2{
+    width:170px ;
+    height:190px;
+  }
+  .stories-card2-img{
+    width: 100%;
+  }
+  .stories-mini-card-title{
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+  } */
+  /* .mini-res{
+    font-size: 9px;
+    font-weight: 600px;
+    width: 80px;
+    height: 12px;
+    text-align: center;
+  }
+  .mini-data{
+    position: relative;
+    top: -12px;
+  } */
