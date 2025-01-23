@@ -428,7 +428,28 @@
   color: rgb(44, 42, 42);
   margin-left: -10px;
 }
-
+.footer2{
+  margin: 120px auto;
+}
+.footer2-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.footer-item{
+  list-style: none;
+  margin-left: -38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer3{
+  margin: 120px auto;
+}
+.footer3-title{
+  font-size:1.5rem ;
+  margin-bottom: 28px;
+  font-weight:bold ;
+}
 
 @media screen and (max-width:576px) {
   .nav-links{
