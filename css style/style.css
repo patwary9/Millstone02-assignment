@@ -359,17 +359,18 @@
 }
 .stories-mini-date2{
   color: white;
-  width: 130px;
-  height: 22px;
-  border-radius: 28px;
-  font-size: 9px;
-  font-weight: 400px;
+  display: inline-block;
+  padding:18px 20px;
+  border-radius: 47px;
+  font-size: 15px;
+  font-weight: 500px;
   /* margin: -190px 78px 10px 20px;  */
 } 
 .mini-data{
   position: relative;
-  left:10px;
-  top: -28px;
+  top: -35px;
+  left: 10px;
+  
 }
 .mini-card-color1 {
   background-color: rgb(3, 65, 17); 
@@ -422,6 +423,11 @@
 .footer1-about{
   display: flex;
   margin-left: -15px;
+}
+/* new style */
+.brand1-footer-title{
+  font-size:1.8rem;
+  font-weight: bold;
 }
 .footer1-description{
   font-size: 1.2rem;
@@ -545,7 +551,7 @@
   .mini-data{
     position: relative;
     top: -24px;
-    left: 16px;
+    left: -12px;
   }
   .stories-card2-img{
     width: 100%;
@@ -582,6 +588,10 @@
   .footer3{
     margin: 40px 20px;
   }
-  
+  .brand1-footer-title{
+    font-size: 35px ;
+    font-weight: bold;
+    margin-left: 12px;
+  }
 
 }
