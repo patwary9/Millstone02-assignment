@@ -304,7 +304,7 @@
   background-color: rgba(60, 216, 232, 1); 
   color: white;
   display: inline-block;
-  padding:18px 20px ;
+  padding:18px 20px;
   border-radius: 47px;
   font-size: 15px;
   font-weight: 500px;
@@ -332,15 +332,16 @@
   gap: 18px;
   margin-top: 80px;
   margin-bottom: 80px;
-  width: 600px;
+  /* width: 600px; */
   /* newstyle: ; */
 }
 .stories-card2{
   border-radius: 16px;
   background-color: white;
   border: none;
-  /* margin: 0px auto; */
-  width: 310px;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
   height: 330px;
 
 }
@@ -511,6 +512,7 @@
     display: none;
   }
   .stories{
+    width: 390px;
   }
   .stories-title{
     font-size:1.75rem ;
@@ -529,6 +531,7 @@
     width: 340px;
     height: auto;
     margin: 0px auto;
+   margin-left: 25px;
   } 
   .stories-mini-date2{
     color: white;
@@ -561,5 +564,24 @@
     height: 12px;
     text-align: center;
   }
+.footer{
+  width: 390px;
+  margin: 0px auto;
+}
+  .footer-container{
+    grid-template-columns: repeat(1,1fr);
+    width: auto;
+    margin:0px auto;
+  }
+  .footer1{
+  margin: 50px 20px;
+  }
+  .footer2{
+    margin: 40px 20px;
+  }
+  .footer3{
+    margin: 40px 20px;
+  }
   
+
 }
