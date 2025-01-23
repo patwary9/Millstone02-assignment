@@ -262,9 +262,7 @@
 /* stories style */
 .stories{
   /* background-image: url(../assets/bg.png); */
-  background:  url(../assets/bg.png), linear-gradient(to top, #ffdb9e, #ffffff);
-   
-  margin: 0px auto;
+  background:  url(../assets/bg.png), linear-gradient(to top, #ffdb9e, #ffffff);  
 }
 .stories-title{
   font-size: 3.05rem;
@@ -280,8 +278,8 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 18px;
-  margin: 0px auto;
   max-width: 1360px;
+  margin: 0px auto;
 }
 .stories-card1{
   border-radius: 16px;
@@ -331,18 +329,19 @@
 .stories-mini-card{
   display: grid; 
   grid-template-columns: repeat(2,1fr);
-  gap: 12px;
+  gap: 18px;
   margin-top: 80px;
   margin-bottom: 80px;
-  
+  width: 600px;
+  /* newstyle: ; */
 }
 .stories-card2{
   border-radius: 16px;
   background-color: white;
   border: none;
-  margin: 0px auto;
-  width: 320px;
-  height: 340px;
+  /* margin: 0px auto; */
+  width: 310px;
+  height: 330px;
 
 }
 .stories-card2-img{
@@ -359,11 +358,11 @@
 }
 .stories-mini-date2{
   color: white;
-  display: inline-block;
-  padding: 10px 19px;
-  border-radius: 47px;
-  font-size: 15px;
-  font-weight: 500px;
+  width: 130px;
+  height: 22px;
+  border-radius: 28px;
+  font-size: 9px;
+  font-weight: 400px;
   /* margin: -190px 78px 10px 20px;  */
 } 
 .mini-data{
@@ -403,6 +402,33 @@
 .view-button:hover{
   background-color: rgb(28, 28, 248);
 }
+
+/* footer style */
+.footer{
+  background-color: cyan;
+  margin: 0px auto;
+}
+.footer-container{
+  width: 1360px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.footer1{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  margin: 120px auto;
+}
+.footer1-about{
+  display: flex;
+  margin-left: -15px;
+}
+.footer1-description{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(44, 42, 42);
+  margin-left: -10px;
+}
+
 
 @media screen and (max-width:576px) {
   .nav-links{
@@ -451,7 +477,6 @@
   .curriculam{
     margin: 5px 10px;
   }
-  
   .curriculam-title{
     font-size: 1.7rem;
     font-weight: bold;
@@ -464,18 +489,29 @@
   .stories-card1{
     display: none;
   }
+  .stories{
+  }
+  .stories-title{
+    font-size:1.75rem ;
+    font-weight: bold;
+  }
   .stories-container{
-  
+    margin: 0px auto;
+    gap: 5px;
+    justify-content:center ;
+    align-items: center;
   }
   .stories-mini-card{
-
+    grid-template-columns: repeat(1,1fr);
   }
   .stories-card2{
-
-  }
+    width: 340px;
+    height: auto;
+    margin: 0px auto;
+  } 
   .stories-mini-date2{
     color: white;
-    width: 130px;
+    width: 103px;
     height: 22px;
     border-radius: 28px;
     font-size: 9px;
@@ -493,7 +529,7 @@
     border: none;
   }
   .stories-mini-card-title{
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     margin-top: 10px;
   }
@@ -504,8 +540,5 @@
     height: 12px;
     text-align: center;
   }
-  /* footer */
-  .footer{
-    display: none;
-  }
+  
 }
