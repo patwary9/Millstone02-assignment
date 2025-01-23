@@ -84,6 +84,22 @@
     background-color: black;
   }
 
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    /* position: relative; */
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .marquee-description{
+    /* position: absolute; */
+    display: inline-block;
+    padding-left: 100%;
+    animation:scroll 5s linear infinite;
+    font-size: 1.5rem;
+  }
+  
+
   /* banner style */
   
 .banner{
@@ -285,7 +301,7 @@
   border-radius: 16px;
   background-color: white;
   width:660px ;
-  height: 690px; 
+  height: 710px; 
   border: none;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -342,7 +358,7 @@
   justify-content: center;
   align-items: center;
   width: 340px;
-  height: 330px;
+  height: 340px;
 
 }
 .stories-card2-img{
@@ -355,7 +371,8 @@
   font-size: 1rem;
   font-weight: bold;
   margin: 0px 38px 33px 20px;
-  margin-top: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
 }
 .stories-mini-date2{
   color: white;
@@ -469,7 +486,6 @@
     display: block;
     width: 30px;
     height: 30px;
-
   }
   .navbar{
     display: flex;
@@ -481,6 +497,7 @@
     display: block;
     border: 1px solid orange;
   }
+  
   .banner{
     grid-template-columns: repeat(1,1fr);
     flex-direction: column-reverse;
@@ -540,18 +557,21 @@
    margin-left: 25px;
   } 
   .stories-mini-date2{
-    color: white;
-    width: 103px;
-    height: 22px;
-    border-radius: 28px;
-    font-size: 9px;
-    font-weight: 400px;
-    /* margin: -190px 78px 10px 20px;  */
+   color: white;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 28px;
+  /* font-size: 12px;
+  font-weight: 400px;  */
+
   } 
   .mini-data{
+    /* display: flex; */
+    /* align-items: center;  */
     position: relative;
-    top: -24px;
-    left: -12px;
+    gap: 10px; 
+    left: 18px;
+    /* margin-left: 0; */
   }
   .stories-card2-img{
     width: 100%;
@@ -559,16 +579,20 @@
     border: none;
   }
   .stories-mini-card-title{
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
+    
   }
   .mini-res{
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 600px;
     width: 80px;
-    height: 12px;
+    height: 8px;
     text-align: center;
+    /* text-align: initial; */
+    /* margin-left: 20; */
+    /* text-align: center; */
   }
 .footer{
   width: 390px;
@@ -589,9 +613,24 @@
     margin: 40px 20px;
   }
   .brand1-footer-title{
-    font-size: 35px ;
+    font-size: 1.7rem;
     font-weight: bold;
-    margin-left: 12px;
+    margin-left: -2px;
   }
+  .footer1-about{
+    margin-left:-15px;
+  }
+}
 
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  50{
+    transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
